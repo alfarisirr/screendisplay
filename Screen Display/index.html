@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Anime-wallpaper-background-download.jpg" />
+        <h1 id="current-time">16:53:50</h1>
+        <div class="quotes">
+            <p>TODAY'S QUOTES</p>
+            <h2>Life Time. <br>
+                LightTheBeam.
+            </h2>
+        </div>
+    </div>
+    <script>
+        let time = document.getElementById("current-time")
+        setInterval(() => {
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        }, 1000);
+    </script>    
+</body>
+</html>
